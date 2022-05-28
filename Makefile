@@ -26,3 +26,5 @@ push:
 	scp -C -P 911 target/x86_64-unknown-linux-gnu/release/$(BIN_NAME) meow@$(HOST):$(PROJ_NAME)/$(BIN_NAME).new
 remote:
 	ssh meow@$(HOST) -p 911
+up:
+	git submodule foreach git pull
