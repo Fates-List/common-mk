@@ -16,7 +16,7 @@ dev:
 devrun:
 	DATABASE_URL=$(DATABASE_URL) RUSTFLAGS=$(RUSTFLAGS_LOCAL) cargo run
 run:
-	-mv -vf fates.new fates # If it exists
+	-mv -vf $(BIN_NAME).new $(BIN_NAME) # If it exists
 	./$(BIN_NAME)
 flame:
 	RUSTFLAGS=$RUSTFLAGS_LOCAL) DATABASE_URL=$(DATABASE_URL) cargo flamegraph $(CARGOFLAGS) --bin $(BIN_NAME)
