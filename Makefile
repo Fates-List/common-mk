@@ -7,7 +7,7 @@ CARGO_TARGET_GNU_LINKER="x86_64-unknown-linux-gnu-gcc"
 # Some sensible defaults, should be overrided per-project
 BIN_NAME ?= fates
 PROJ_NAME ?= $(BIN_NAME)
-HOST ?= 100.87.78.60
+HOST ?= 100.67.94.49
 
 all:
 	@make cross
